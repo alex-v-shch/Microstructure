@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="DataMenu">
+    <property name="title">
+     <string>Параметры</string>
+    </property>
+    <addaction name="workDir"/>
+    <addaction name="separator"/>
+    <addaction name="editOptions"/>
+    <addaction name="editFractions"/>
+   </widget>
+   <widget class="QMenu" name="CalcMenu">
+    <property name="title">
+     <string>Расчёт</string>
+    </property>
+    <addaction name="cleanDistributions"/>
+    <addaction name="processStart"/>
+    <addaction name="processStop"/>
+    <addaction name="separator"/>
+    <addaction name="visualisation"/>
+    <addaction name="saveAll"/>
+    <addaction name="filling"/>
+   </widget>
+   <widget class="QMenu" name="FileMenu">
+    <property name="title">
+     <string>Файл распределения</string>
+    </property>
+    <addaction name="loadFile"/>
+    <addaction name="separator"/>
+    <addaction name="generator"/>
+   </widget>
+   <addaction name="DataMenu"/>
+   <addaction name="FileMenu"/>
+   <addaction name="CalcMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="workDir">
+   <property name="text">
+    <string>Рабочий каталог</string>
+   </property>
+  </action>
+  <action name="editOptions">
+   <property name="text">
+    <string>Структура модели</string>
+   </property>
+  </action>
+  <action name="editFractions">
+   <property name="text">
+    <string>Фракции</string>
+   </property>
+  </action>
+  <action name="processStart">
+   <property name="text">
+    <string>Запустить</string>
+   </property>
+  </action>
+  <action name="visualisation">
+   <property name="text">
+    <string>Визуализация</string>
+   </property>
+  </action>
+  <action name="saveAll">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="applicationHelp">
+   <property name="text">
+    <string>О программе</string>
+   </property>
+  </action>
+  <action name="optionsHelp">
+   <property name="text">
+    <string>Параметры</string>
+   </property>
+  </action>
+  <action name="qtHelp">
+   <property name="text">
+    <string>Qt</string>
+   </property>
+  </action>
+  <action name="loadFile">
+   <property name="text">
+    <string>Загрузить</string>
+   </property>
+  </action>
+  <action name="cleanDistributions">
+   <property name="text">
+    <string>Очистить</string>
+   </property>
+  </action>
+  <action name="processStop">
+   <property name="text">
+    <string>Остановить</string>
+   </property>
+  </action>
+  <action name="generator">
+   <property name="text">
+    <string>Генератор</string>
+   </property>
+  </action>
+  <action name="saveFile">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="filling">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Степень заполнения</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
